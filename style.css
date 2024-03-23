@@ -14,6 +14,7 @@ img {
   margin: 0 auto;
   margin-top: 5%;
 }
+ 
 .container {
   display: grid;
   width: 25em;
@@ -21,6 +22,7 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: 8em;
 }
+  
 .original-image {
   width: 25em;
   height: 25em;
@@ -32,7 +34,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #edb506;
+  background-color: #99d98c;
   width: 100%;
   height: 100%;
   display: flex;
@@ -40,13 +42,63 @@ img {
   justify-content: center;
   align-items: center;
 }
-#start-button {
+/* #start-button {
   font-size: 1.2em;
   padding: 0.8em 2em;
   border: none;
   border-radius: 3em;
   cursor: pointer;
+} */
+
+.btn-13 {
+  width: 200px;
+  height: 50px;
+  color: #230b7a;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  background-color: #89d8d3;
+  background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
+  border: none;
+  z-index: 1;
 }
+.btn-13:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+  background-color: #4dccc6;
+  background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn-13:hover {
+  color: #fff;
+}
+.btn-13:hover:after {
+  top: 0;
+  height: 100%;
+}
+.btn-13:active {
+  top: 2px;
+}
+
+
+
 #moves {
   position: relative;
   margin: 1em;
