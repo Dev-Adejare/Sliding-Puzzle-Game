@@ -9,13 +9,14 @@ let movesCount,
   imagesArr = [];
 const isTouchDevice = () => {
   try {
-    //We try to create TouchEvent (it would fail for desktops ad throw error)
+    //I create TouchEvent (it would fail for desktops ad throw error)
     document.createEvent("TouchEvent");
     return true;
   } catch (e) {
     return false;
   }
 };
+
 //Random number for image
 const randomNumber = () => Math.floor(Math.random() * 8) + 1;
 
